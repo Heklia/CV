@@ -1,37 +1,331 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Céline Verlet - CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Céline Verlet - CV</title>
+
+  <style>
+    :root {
+      --primary: #12355b;
+      --secondary: #1f7a8c;
+      --accent: #f2a541;
+      --light: #f7f9fb;
+      --dark: #1f2933;
+      --muted: #6b7280;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      margin: 12px 0;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: 20px auto 0;
+      font-size: 1.05rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: -35px auto 40px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    h3 {
+      color: var(--primary);
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e8f3f6;
+      color: var(--primary);
+      padding: 8px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .timeline {
+      border-left: 3px solid var(--secondary);
+      padding-left: 22px;
+    }
+
+    .timeline-item {
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background: var(--accent);
+      border-radius: 50%;
+      position: absolute;
+      left: -30px;
+      top: 7px;
+    }
+
+    .timeline-item h4 {
+      margin: 0;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .timeline-item span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      background: #fff7e8;
+      border-left: 4px solid var(--accent);
+      padding: 15px 18px;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .container {
+        margin: 0;
+        max-width: none;
+      }
+
+      .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Céline Verlet</h1>
+  <header>
+    <h1>Céline Verlet</h1>
+    <h2>Directrice Performance Opérationnelle</h2>
+    <p>
+      Performance industrielle • Amélioration continue • ISO 9001 • Lean Six Sigma •
+      Processus • Robotique industrielle • Pilotage de la transformation
+    </p>
+  </header>
 
-<h2>Directrice Performance Opérationnelle</h2>
+  <main class="container">
 
-<p>
-Spécialisée en amélioration continue, performance industrielle,
-ISO 9001, Lean Management et industrie 4.0.
-</p>
+    <section class="card">
+      <h3>Profil professionnel</h3>
+      <p>
+        Professionnelle de la performance opérationnelle, spécialisée dans la structuration
+        des processus, l’amélioration continue et le pilotage de la transformation industrielle.
+        J’interviens à l’interface entre stratégie, terrain, qualité, finance et systèmes
+        d’information pour construire des organisations plus robustes, lisibles et performantes.
+      </p>
 
-<h2>Compétences</h2>
+      <div class="highlight">
+        Approche systémique, culture du résultat, vision processus et forte appétence pour
+        les outils numériques : Excel, Python, automatisation, indicateurs et visual management.
+      </div>
+    </section>
 
-<ul>
-<li>Performance opérationnelle</li>
-<li>ISO 9001</li>
-<li>Audit interne</li>
-<li>Lean Six Sigma</li>
-<li>Gestion de projet</li>
-<li>Excel & Python</li>
-</ul>
+    <section class="card">
+      <h3>Domaines d’expertise</h3>
+      <div>
+        <span class="tag">Performance opérationnelle</span>
+        <span class="tag">Amélioration continue</span>
+        <span class="tag">ISO 9001</span>
+        <span class="tag">Audit interne</span>
+        <span class="tag">Lean Six Sigma</span>
+        <span class="tag">Cartographie processus</span>
+        <span class="tag">KPI & tableaux de bord</span>
+        <span class="tag">Pilotage industriel</span>
+        <span class="tag">Excel avancé</span>
+        <span class="tag">Python</span>
+        <span class="tag">Industrie 4.0</span>
+        <span class="tag">Robotique industrielle</span>
+      </div>
+    </section>
 
-<h2>Expérience</h2>
+    <section class="card">
+      <h3>Expérience professionnelle</h3>
 
-<p>
-Pilotage de la performance et structuration des processus dans un environnement industriel innovant.
-</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h4>Directrice Performance Opérationnelle — VLM</h4>
+          <span>Industrie agile 4.0 • Robotique • Cellules industrielles</span>
+          <p>
+            Structuration et amélioration des processus internes dans un environnement industriel
+            innovant combinant R&D, production, solutions robotisées et développement commercial.
+          </p>
+          <ul>
+            <li>Pilotage de la performance opérationnelle.</li>
+            <li>Supervision de la BU Les Ateliers VLM.</li>
+            <li>Préparation et structuration de la démarche ISO 9001.</li>
+            <li>Mise en place d’indicateurs de suivi et d’outils de pilotage.</li>
+            <li>Analyse des flux, des processus et des dysfonctionnements.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Activités associées</h4>
+          <span>VLM Robotics • Les Ateliers VLM • Mepuls</span>
+          <p>
+            Contribution transversale aux différentes activités de l’entreprise :
+            développement de cellules robotisées sur mesure, fabrication de pièces,
+            contrôle non destructif et commercialisation d’instruments de mesure.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Compétences clés</h3>
+
+      <div class="grid">
+        <div>
+          <h4>Performance & organisation</h4>
+          <ul>
+            <li>Diagnostic organisationnel</li>
+            <li>Optimisation des processus</li>
+            <li>Pilotage par les indicateurs</li>
+            <li>Management visuel</li>
+            <li>Résolution de problèmes</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Qualité & amélioration continue</h4>
+          <ul>
+            <li>ISO 9001</li>
+            <li>Audit interne</li>
+            <li>Analyse des risques</li>
+            <li>Standardisation</li>
+            <li>Plan d’actions correctives</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Outils & data</h4>
+          <ul>
+            <li>Excel avancé</li>
+            <li>Automatisation</li>
+            <li>Python</li>
+            <li>Tableaux de bord</li>
+            <li>Analyse de données opérationnelles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Formation</h3>
+      <p>
+        Formation en gestion d’entreprise, finance, comptabilité et audit interne.
+      </p>
+      <p>
+        Parcours de montée en compétences prévu ou en cours :
+        Lean Six Sigma et audit interne ISO 9001 / IRCA.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Positionnement professionnel</h3>
+      <p>
+        Mon objectif est de transformer la complexité opérationnelle en systèmes simples,
+        mesurables et pilotables. J’apporte une lecture globale de l’entreprise, tout en
+        construisant des outils concrets pour améliorer la performance quotidienne.
+      </p>
+
+      <div class="highlight">
+        Fil conducteur : rendre les processus visibles, mesurables, maîtrisés et améliorables.
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Contact</h3>
+      <p>Email : <a href="mailto:cverlet@gmail.com">cverlet@gmail.com</a></p>
+      <p>GitHub : <a href="https://github.com/cverlet">github.com/cverlet</a></p>
+      <p>Localisation : Gironde, France</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © Céline Verlet — CV professionnel en ligne
+  </footer>
 
 </body>
 </html>
